@@ -41,8 +41,8 @@ video{
 
 #mars{
     background-position: -286px -345px;
-	width: 16vw;
-    height: 36vh;
+	width: 19vw;
+    height: 29vh;
     float: right;
     position: relative;
     right: 5vw;
@@ -52,8 +52,8 @@ video{
 
 #jupiter{
     background-position: -741px -23px;
-    width: 17vw;
-    height: 38vh;
+    width: 20vw;
+    height: 33vh;
     top: 0vh;
     float: left;
     position: fixed;
