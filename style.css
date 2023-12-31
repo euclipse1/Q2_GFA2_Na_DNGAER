@@ -30,8 +30,8 @@ video{
 
 #earth{
     background-position: -532px -352px;
-    width: 203px;
-	height: 205px;
+    width: 7vw;
+	height: 15vh;
     float: right;
     position: fixed;
     right: 20vw;
@@ -41,8 +41,8 @@ video{
 
 #mars{
     background-position: -286px -345px;
-	width: 206px;
-	height: 206px;
+	width: 7vw;
+	height: 15vh;
     float: right;
     position: relative;
     right: 2vw;
@@ -52,11 +52,12 @@ video{
 
 #jupiter{
     background-position: -741px -23px;
-    width: 242px;
-	height: 242px;
+    width: 10vw;
+	height: 19vh;
     top: 20vh;
     float: left;
     position: fixed;
+    transform-origin: center;
     animation: rotate 5s infinite linear;
 }
 
