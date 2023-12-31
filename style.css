@@ -30,31 +30,31 @@ video{
 
 #earth{
     background-position: -532px -352px;
-    width: 7vw;
-	height: 10vh;
+    width: 15vw;
+    height: 30vh;
     float: right;
     position: fixed;
-    right: 20vw;
+    right: 13vw;
     top: 50vh;
     animation: rotate 45s infinite linear;
 }
 
 #mars{
     background-position: -286px -345px;
-	width: 7vw;
-	height: 10vh;
+	width: 16vw;
+    height: 26vh;
     float: right;
     position: relative;
-    right: 2vw;
-    top: 50vh;
+    right: 5vw;
+    top: 15vh;
     animation: rotate 50s infinite linear;
 }
 
 #jupiter{
     background-position: -741px -23px;
-    width: 9vw;
-	height: 15vh;
-    top: 20vh;
+    width: 17vw;
+    height: 31vh;
+    top: 0vh;
     float: left;
     position: fixed;
     transform-origin: center;
@@ -133,7 +133,7 @@ video{
     text-align: center;
     color: rgb(255, 255, 255);
     top: 30vh;
-    left: 37vw;
+    left: 25vw;
     font-family: 'Heebo', sans-serif;
     font-family: 'IM Fell English SC', serif;
     font-family: 'Space Mono', monospace;
