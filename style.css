@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=IM+Fell+English+SC&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=IM+Fell+English+SC&family=Rubik+Doodle+Shadow&family=Rubik+Scribble&family=Space+Mono&family=Train+One&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    overflow: hidden;
+}
+
+video{
+    position:fixed ;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.planet{
+    background: url(media/planets.png);
+    width: 10vw;
+    height: 10vh;
+    top: 5vh;
+    z-index: 5;
+}
+
+#earth{
+    background-position: -532px -352px;
+    width: 203px;
+	height: 205px;
+    float: right;
+    position: fixed;
+    right: 20vw;
+    top: 50vh;
+    animation: rotate 45s infinite linear;
+}
+
+#mars{
+    background-position: -286px -345px;
+	width: 206px;
+	height: 206px;
+    float: right;
+    position: relative;
+    right: 2vw;
+    top: 50vh;
+    animation: rotate 50s infinite linear;
+}
+
+#jupiter{
+    background-position: -741px -23px;
+    width: 242px;
+	height: 242px;
+    top: 20vh;
+    float: left;
+    position: fixed;
+    animation: rotate 5s infinite linear;
+}
+
+#met{
+    position: fixed;
+    left: -5vw;
+    top: 9vh;
+    width: 5vw;
+    z-index: 10;
+    animation: wobbleMove 20s infinite ease-in-out;
+}
+
+#met2{
+    position: fixed;
+    right: 2vw;
+    top: -25vh;
+    width: 15vw;
+    z-index: 15;
+    animation: wobbleMove 2s infinite ease-in-out;
+}
+
+#met3{
+    position: fixed;
+    left: -15vw;
+    top: 50vh;
+    width: 9vw;
+    animation: wobbleMove 30s infinite ease-in-out;
+}
+
+
+#moon{
+    position: fixed;
+    bottom: -33vw;
+    z-index: 4;
+    width: 60vw;
+    left: 19vw;
+    animation: rotate 15s infinite linear;
+}
+
+
+#orbit1{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 120%;
+    bottom: -25vw;
+    left: 12vw;
+    opacity: 50%;
+}
+
+#orbit2{
+    position: fixed;
+    z-index: 2;
+    width: 190%;
+    height: 210%;
+    bottom: -45vw;
+    left: -40vw;
+    opacity: 50%;
+}
+
+#orbit3{
+    position: fixed;
+    z-index: 2;
+    width: 250%;
+    height: 235%;
+    bottom: -45vw;
+    left: -72vw;
+    opacity: 50%;
+}
+
+.content{
+    position: fixed;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    top: 30vh;
+    left: 30vw;
+    font-size: xx-large;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'IM Fell English SC', serif;
+    font-family: 'Space Mono', monospace;
+}
+
+.content span{
+    font-family: 'Train One';font-size: 22px;
+    font-size: xxx-large;
+}
+
+#galaxy{
+    width: 5vw;
+    height: 8vh;
+    top: 5vh;
+    right: 5vw;
+    position: fixed;
+    animation: galaxy 10s linear infinite;
+    z-index: 0;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes wobbleMove{
+    0% {
+        transform: translateY(-100vh) translateX(-100%vw);
+      }
+      100% {
+        transform: translateY(100vh) translateX(100vw);
+      }
+}
+
+@keyframes galaxy{
+    0%{transform: scale(900%);}
+    25%{
+        transform: scale(350.35%);
+        opacity:50%;
+    }
+    50%{
+        transform: scale(.7%);
+        opacity:30%;
+    }
+    75%{
+        transform: scale(350.35%);
+        opacity:50%;
+    }
+    100%{transform: scale(900%);}
+}
+
